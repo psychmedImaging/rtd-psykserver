@@ -1,4 +1,4 @@
-Usage
+UPPMAX
 =====
 
 .. _installation:
