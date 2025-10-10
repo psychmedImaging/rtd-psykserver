@@ -6,7 +6,6 @@ build:
     python: "3.10"
   apt_packages:
     - graphviz
-    - graphviz-dev
 
 python:
   install:
