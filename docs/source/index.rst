@@ -14,3 +14,9 @@ Contents
 
    BIDS
    UPPMAX
+
+.. graphviz::
+
+   digraph {
+      "From" -> "To";
+   }
