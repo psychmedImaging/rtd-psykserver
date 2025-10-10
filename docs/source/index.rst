@@ -18,5 +18,13 @@ Contents
 .. graphviz::
 
    digraph {
-      "From" -> "To";
+      "anat" [shape=box];
+      "dwi" [shape=box];
+      "fmri" [shape=box];
+      "anat" -> "fmriprep";
+      "anat" -> "qsiprep";
+      "fmri" -> "fmriprep";
+      "dwi" -> "qsiprep";
+      "qsiprep" -> "qsirecon";
+      "fmriprep" -> "xcp_d";
    }
