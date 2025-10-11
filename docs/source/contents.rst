@@ -1,0 +1,4 @@
+.. toctree::
+   BIDS
+   UPPMAX
+   server
