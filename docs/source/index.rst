@@ -14,6 +14,7 @@ Contents
 
    BIDS
    UPPMAX
+   server
 
 .. graphviz::
 
