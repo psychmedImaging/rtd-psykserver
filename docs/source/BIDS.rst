@@ -1,6 +1,5 @@
 BIDS
 =====
 
-.. autosummary::
-   :toctree: generated
-
+Introduction
+------------
