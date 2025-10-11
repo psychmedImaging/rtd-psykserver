@@ -1,10 +1,13 @@
 UPPMAX
 =====
 
-.. _installation:
-
-Installation
+Getting access
 ------------
 
+Logging in and transferring files
+------------
+
+Running pipelines
+------------
 
 
