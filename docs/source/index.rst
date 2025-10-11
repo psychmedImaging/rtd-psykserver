@@ -11,7 +11,7 @@ Contents
 --------
 
 .. toctree::
-
+   :hidden:
    BIDS
    UPPMAX
    server
