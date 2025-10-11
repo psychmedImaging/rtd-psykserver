@@ -7,14 +7,6 @@ Here you will find the necessary documentation to perform BIDS conversion of col
 
    This documentation is in alpha state.
 
-Contents
---------
-
-.. toctree::
-   :hidden:
-   BIDS
-   UPPMAX
-   server
 
 .. graphviz::
 
