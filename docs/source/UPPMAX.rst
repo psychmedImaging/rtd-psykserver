@@ -1,14 +1,10 @@
 UPPMAX
 =====
+.. note::
+UPPMAX provides high-performance computing (HPC) and enables running containerized processing pipelines, such as the so called BIDSapps for neuroimaging data, in a highly parallelized fashion.
 
-Getting access
-------------
+Below is an outline of a typical workflow for multimodal MRI data:
 
-Logging in and transferring files
-------------
-
-Running pipelines
-------------
 .. graphviz::
 
    digraph {
@@ -46,4 +42,12 @@ Running pipelines
          label = "processing pipelines";
       }
    }
+Getting access
+------------
+
+Logging in and transferring files
+------------
+
+Running pipelines
+------------
 
