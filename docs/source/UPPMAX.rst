@@ -30,6 +30,7 @@ Below is an outline of a typical workflow for multimodal MRI data:
          subgraph cluster2 {
             "xcp_d";
             label = "rs-fmri";
+            labelloc=b;
          }
          "fmriprep" -> "xcp_d";
          "freesurfer" -> "fmriprep";
@@ -37,9 +38,11 @@ Below is an outline of a typical workflow for multimodal MRI data:
          subgraph cluster3 {
             "fitlins";
             label = "task-fmri";
+            labelloc=b;
          }
          "fmriprep" -> "fitlins";
          label = "processing pipelines";
+         labelloc=b;
       }
    }
 Getting access
