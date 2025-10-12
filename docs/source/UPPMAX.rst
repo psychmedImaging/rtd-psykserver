@@ -12,9 +12,15 @@ Running pipelines
 .. graphviz::
 
    digraph {
-      "anat" [shape=box];
-      "dwi" [shape=box];
-      "fmri" [shape=box];
+      subgraph cluster0 {
+         node [style=filled,color=white];
+         style=filled;
+         color=lightgrey;
+         "anat" [shape=box];
+         "dwi" [shape=box];
+         "fmri" [shape=box];
+         label = "raw data";
+      }
       "anat" -> "mriqc";
       "dwi" -> "mriqc";
       "fmri" -> "mriqc";
