@@ -15,10 +15,10 @@ Running pipelines
       "anat" [shape=box];
       "dwi" [shape=box];
       "fmri" [shape=box];
+      "fmri" -> "fmriprep";
       "anat" -> "fmriprep";
       "anat" -> "qsiprep";
       "anat" -> "freesurfer";
-      "fmri" -> "fmriprep";
       "dwi" -> "qsiprep";
       "qsiprep" -> "qsirecon";
       "fmriprep" -> "xcp_d";
