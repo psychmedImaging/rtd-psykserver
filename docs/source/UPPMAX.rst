@@ -21,18 +21,27 @@ Running pipelines
          "fmri" [shape=box];
          label = "raw data";
       }
-      "anat" -> "mriqc";
-      "dwi" -> "mriqc";
-      "fmri" -> "mriqc";
-      "fmri" -> "fmriprep";
-      "anat" -> "fmriprep";
-      "anat" -> "qsiprep";
-      "anat" -> "freesurfer";
-      "dwi" -> "qsiprep";
-      "qsiprep" -> "qsirecon";
-      "fmriprep" -> "xcp_d";
-      "freesurfer" -> "fmriprep";
-      "freesurfer" -> "qsirecon";
-      "fmriprep" -> "fitlins";
+      subgraph cluster1 {
+         "anat" -> "mriqc";
+         "dwi" -> "mriqc";
+         "fmri" -> "mriqc";
+         "fmri" -> "fmriprep";
+         "anat" -> "fmriprep";
+         "anat" -> "qsiprep";
+         "anat" -> "freesurfer";
+         "dwi" -> "qsiprep";
+         "qsiprep" -> "qsirecon";
+         subgraph cluster2 {
+            "fmriprep" -> "xcp_d";
+            label = "rs-fmri";
+         }
+         "freesurfer" -> "fmriprep";
+         "freesurfer" -> "qsirecon";
+         subgraph cluster3 {
+            "fmriprep" -> "fitlins";
+            label = "task-fmri";
+         }
+         label = "processing pipelines";
+      }
    }
 
