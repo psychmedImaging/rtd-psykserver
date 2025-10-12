@@ -15,6 +15,9 @@ Running pipelines
       "anat" [shape=box];
       "dwi" [shape=box];
       "fmri" [shape=box];
+      "anat" -> "mriqc";
+      "dwi" -> "mriqc";
+      "fmri" -> "mriqc";
       "fmri" -> "fmriprep";
       "anat" -> "fmriprep";
       "anat" -> "qsiprep";
@@ -24,5 +27,6 @@ Running pipelines
       "fmriprep" -> "xcp_d";
       "freesurfer" -> "fmriprep";
       "freesurfer" -> "qsirecon";
+      "fmriprep" -> "fitlins";
    }
 
