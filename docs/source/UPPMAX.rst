@@ -32,15 +32,17 @@ Running pipelines
          "dwi" -> "qsiprep";
          "qsiprep" -> "qsirecon";
          subgraph cluster2 {
-            "fmriprep" -> "xcp_d";
+            "xcp_d";
             label = "rs-fmri";
          }
+         "fmriprep" -> "xcp_d";
          "freesurfer" -> "fmriprep";
          "freesurfer" -> "qsirecon";
          subgraph cluster3 {
-            "fmriprep" -> "fitlins";
+            "fitlins";
             label = "task-fmri";
          }
+         "fmriprep" -> "fitlins";
          label = "processing pipelines";
       }
    }
