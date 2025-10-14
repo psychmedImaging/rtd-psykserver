@@ -52,10 +52,13 @@ In order to use UPPMAX, you need access to a project. To gain access to a SNIC S
 Logging in and transferring files
 ------------
 You log in to a SENS project with ssh:
+
 .. code-block:: shell
    ssh [userid]@bianca.uppmax.uu.se
+
 You will be prompted for a password and two-factor authentication. Unless you logged in recently, the login node is likely down and will take a few minutes to start up, after which you need to enter the password again. After logging in, you will be met with a linux shell and are now ready to run jobs.
 The SENS projects are made to handle sensitive data and have no internet access as a consequence. The only way to transfer files to/from UPPMAX is through the 'wharf'. You can mount the wharf in your local file system with sshfs:
+
 .. code-block:: shell
    mkdir wharf
    sshfs [userid]@bianca-sftp.uppmax.uu.se:[projectid]/[userid] wharf
