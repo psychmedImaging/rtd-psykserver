@@ -74,3 +74,4 @@ Sensible SBATCH settings
 ^^^^^^^^^^^^^^^^^^^^^^^^
 * ``freesurfer`` with a full run on one T1w (1x1x1mm) took 6h and used a maximum of 1 CPU
 * ``fmriprep`` including ``freesurfer`` preprocessing on one functional run (3x3x3mm) and one T1w (1x1x1mm) took 5.5h and used a maximum of 8/8 CPUs (4 CPUs on average)
+* ``qsiprep`` with output resolution 2mm on dwi data with one shell, 60 directions (3x3x3mm) took 3.25h and consumed a maximum of 8/8 CPUs (60% of the time), 6 CPUs on average
