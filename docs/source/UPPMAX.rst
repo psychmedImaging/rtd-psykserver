@@ -1,5 +1,5 @@
 UPPMAX
-=====
+========
 .. note::
 UPPMAX provides high-performance computing (HPC) and enables running containerized processing pipelines, such as the so called BIDSapps for neuroimaging data, in a highly parallelized fashion.
 
@@ -46,11 +46,11 @@ Below is an outline of a typical workflow for multimodal MRI data:
       }
    }
 Getting access
-------------
+---------------
 In order to use UPPMAX, you need access to a project. To gain access to a SNIC SENS Medium project, contact PI Jonas Persson.
 
 Logging in and transferring files
-------------
+------------------------------------
 You log in to a SENS project with ssh:
 
 .. code-block:: shell
@@ -68,5 +68,9 @@ The SENS projects are made to handle sensitive data and have no internet access 
 If you are using the ``server``, the wharf is mounted at startup.
 
 Running pipelines
-------------
+------------------
 
+Sensible SBATCH settings
+^^^^^^^^^^^^^^^^^^^^^^^^
+* ``freesurfer`` with a full run on one T1w (1x1x1mm) took 6h and used a maximum of 1 CPU
+* ``fmriprep`` including ``freesurfer`` preprocessing on one functional run (3x3x3mm) and one T1w (1x1x1mm) took 5.5h and used a maximum of 8/8 CPUs (4 CPUs on average)
